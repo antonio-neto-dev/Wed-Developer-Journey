@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>A tag code formata o texto para uma fonte mono espaçada, melhorando a leitura do código, pois todos os caracteres ocuparão o mesmo espaço, assim: document.getElementById('teste').</p>
+    <p>A tag PRE formata o texto da forma como foi escrito, considerando as identações e espaçamentos aplicados, muito útil e utilazada em conjunto com a tag CODE quando queremos exibir códigos na nossa página HTML. Desta forma:</p>
+    <pre><code>
+num = int(input('Digite um número inteiro: ))
+if num % 2 == 0:
+    print(f'O número {num} é par.')
+else:
+    print(f'O número {num} é ímpar.')
+print('Fim do programa')</code></pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai do amigo do professor Gustavo Guanabara: <q>o computador é um burro muito rápido.</q></p>
+    <p>Qual é a diferença entre usar aspas e a tag &lt;q&gt;? A diferença é a semântica, pois a tag &lt;q&gt; possui siginificado, já as aspas simples não possuem significa dentro de HTML, apenas modificam a forma. Por isso, devemos avaliar quando usar aspas simples e quando usar a tag &lt;q&gt;.</p>
+    <h2>Citações completas</h2>
+    <p>Segundo H.P Lovecraft, em seu conto o "O Chamado de Cthulhu":</p>
+    <blockquote cite="https://www.amazon.com.br/Chamado-Cthulhu-H-P-Lovecraft/dp/6555981083">
+        O medo é a emoção mais forte mais forte da humanidade, e o medo do desconhecido é a emoção mais antiga e forte da humanidade
+    </blockquote>
+    <p>O blockquote serve para citações mais estendidas, sendo também uma tag semântica. Essa tag também tem um paramêtro chamado cite, que serve para você indicar para os leitores de tela de onde você retirou essa citação.</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <p>abbr é uma tag semântica para abreviações e serve para os navegadores de testo e o leitor entenderem os significados de determinadas abreviações na sua página.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Irei invertir esse texto usando uma tag semântica inútil para texto invertido, não serve pra nada essa tag, apenas pra irritar.</bdo></p>
+    <p>Como podemos ver, acabei de colocar o texto para ser lido da direita para a esquerda, usando o parâmetro "rtl", que significa rigth to left. Se eu usasse o parâmetro left to right, seria a mesma coisa que deixar o texto normal, então é um parâmetro meio inútil.</p>
+</body>
+</html>

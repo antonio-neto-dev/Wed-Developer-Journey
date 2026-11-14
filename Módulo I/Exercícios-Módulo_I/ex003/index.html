@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens-ex003/dev-web.ico">
+    <title>Teste com Imagens</title>
+</head>
+<body>
+    <h1>Testando carga e Imagens</h1>
+    <p>Abaixo você deveria ver uma imagem que está na mesma pasta, mas eu salvei tudo em uma pasta diferente, a pasta imagens, para fins de melhor organização.</p>
+    <img src="imagens/logo-html.jpg" alt="Logo da HTML 5" loading="lazy">
+    <p>Também podemos carregar imagens que estão localizadas em subpastas, que não estão na pasta principal do nosso projeto, na raiz. Para isso, devemos especificar a localização das nossas imagens, o caminho até elas, a pasta em que estão localizadas e o nome correto do arquivo. Uma boa forma de fazer isso sem ter que escrever vários caminhos é escrevendo "./", assim nos acessamos a raiz do projeto e ficamos no "nível mais alto", por assim dizer, podendo ter acesso a todas as pastas do projeto e apenas chamando a pasta que quisermos, não precisando mais escrever vários caminhos.</p>
+    <img src="./imagens/logo-css.png" alt="Logo da CSS 3" loading="lazy">
+    <p>Também podemos carregar imagens externas que não estão presentes no nosso projeto, utilizando links que direcionem para sua localização, a URL da imagem. Atráves do endereço da imagem, o leitor irá acessar esse link, pegar a imagem, fazer o download dela em segundo plano enquanto continua a análise do arquivo e quando todos os dados da imagem estiverem baixados, o navegador decodifica os dados binários e pinta (painting) os pixels na tela, formando a imagem que vemos, apesar de não estar presente nas pastas do nosso projeto.</p>
+    <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="Logo da JavaScript" loading="lazy" height="200">
+    <p>É possível utilizarmos favicons no nosso site, aqueles símbolos pequenininhos que ficam do lado do nome do site. Fazemos isso utilizando a tag &lt;link&gt;, especificando o tipo da iamgem e a relação semântica que esse arquivo tem com a página atual, se é um icon como nesse caso ou uma folha de estilo, por exemplo, afetando profundamente o pairsing do arquivo HTML e como ele vai processar esse recurso; em resumo, o rel comanda a prioridade da rede e dita se o navegador deve ou não pausar a exibição da página. Já o type especifica o tipo de arquivo ao HTML e muito importante para o navegador entende o que está sendo renderizado ou baixado e quanto de largura de banda terá que gastar, ajudando o navegador a decidir se ele é capaz de renderizar aquela imagem ou arquivo sem gastar banda baixando algo incompatível.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>São links utilizados para acessar páginas fora do seu site, ou seja, acessar outros sites na Web a partir do seu. Exemplo de link a seguir:</p>
+    <p>Venha conhecer o <a href="https://gustavoguanabar.github.io/" target="_blank" rel="external">repositório do GitHub do Gustavo Guanabara</a></p>
+    <p>Como é possível analisar, caso esteja visualizando o código-fonte, a tag &lt;a&gt; possui alguns parâmetros muito importantes, como hreflang, target e rel. Definição dos parâmetros a seguir:</p>
+    <dl>
+        <dt>hreflang:</dt>
+        <dd>Parâmetro utilizado para informar ao navegador e seus leitores de tela o idioma do site qual o usuário vai ser encaminhado ao clicar no link. Muito importante caso o usuário deseja utilizar o mecanismo de tradução automática.</dd>
+        <dt>target:</dt>
+        <dd>Parâmetro utilizado para informar onde esse link deve ser aberto, caso não seja utilizado, ao abrir determinado link, ele irá sobrepor o seu site e dificilmente o usuário irá voltar para o seu site depois disso (esse é um comportamento desejado caso o usuário vá continuar usando nosso site, mas caso em que não, devemos evitar a sobreposição). Por isso, podemos e devemos espeficar os nossos alvos da abertura do link.</dd>
+        <dt>target = "_blank":</dt>
+        <dd>Utilizado para informar que determinado link deve ser aberto em uma janela vazia do navegador e evitar seu site seja sobreposto.</dd>
+        <dt>target = "_self":</dt>
+        <dd>Vai abrir o linkl na janela ou frame atual, ou seja, sobrepondo o site aberto ao seu, sendo o comportamento padrão dos links.</dd>
+        <dt>target = "_top":</dt>
+        <dd>Vai desfazer todos os frames e abrir o link no navegador completo.</dd>
+        <dt>target = "_parent":</dt>
+        <dd>Similar ao uso do _top em uma referência à janela mãe.</dd>
+        <dt>target = "nome-do-frame":</dt>
+        <dd>Caso esteja usando frames, indicar o nome da janela a abrir.</dd>
+        <dt>rel:</dt>
+        <dd>Recurso utilizado para indicar a natureza do destino do link.</dd>
+        <dt>rel = "next":</dt>
+        <dd>Indica que o link é para a próxima parte do documento atual.</dd>
+        <dt>rel = "prev":</dt>
+        <dd>Indica que o link é para a parte anterior do documento atual.</dd>
+        <dt>rel = "author":</dt>
+        <dd>Indica que é um link para o site do autor do artigo atual.</dd>
+        <dt>rel = "external":</dt>
+        <dd>Indica que é um link para outro site que não faz parte do site atual.</dd>
+        <dt>rel = "nofollow":</dt>
+        <dd>Indica que é um link para um site não endossado, como um link pago.</dd>
+    </dl>
+    <p>Em relação ao exemplo de link utilizado, ele é um link externo, por isso devemos informar a URL completa do link, com seu protocolo, subdomínio, domínio, TLD e se precisar, informar também o caminho. Já em links internos, não precisamos informar a URL completa do destino, já que ele leva o visitante para outra página do nosso site. Exemplo de link interno a seguir: <a href="../ex008/index.html" target="_self" rel="prev">exercício 08</a></p>
+</body>
+</html>

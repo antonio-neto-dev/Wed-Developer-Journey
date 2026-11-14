@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Uma lista ordenada é uma lista em que a ordem importa, em que os itens apresentam uma ordem sequencial e um símbolo que represente essa ordem sequencial. As listas ordenadas em <abbr title="HyperText Markup Language">HTML</abbr> possuem dois parâmetros principais: type e start. O parâmetro type serve para indicar o tipo do símbolo que representa a ordem da lista, podendo ser: 1, A, a, I e i, com I e i representando o formato em algarismos romanos. Já o parâmetro start é utilizado para indicar em qual posição sua lista deve começar, por exemplo "start = '4'" - start é um parâmetro númerico, então mesmo que você esteja utilizando um type = "a", por exemplo, você não pode usar um "e" para dizer em qual posição sua lista deve começar, mas sim um número inteiro representando a posição de determinado elemento. Exemplo de lista ordenada a seguir:</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Mandar mensagem para minha namorada</li>
+        <li>Tomar café da manhã</li>
+        <li>Arrumar a casa</li>
+        <li>Estudar o conteúdo programado</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <p>Uma lista não ordenada é uma lista em que a ordem dos itens não importa, podendo iniciar e terminar com qualquer um deles que não fará diferença. Geralmente utilizadas em menus, navegação, listas de compras, etc. O único parâmetro relevante que uma lista não ordenada possui é o type, que pode ser um disc, um circle e um square, que como os nomes dizem, irá mudar a aparência ou para um disco, ou para um círculo vazio ou para um quadrado preenchido, com o símbolo padrão sendo o disco. Exemplo de lista não ordenada a seguir:</p>
+    <ul>
+        <li>Alface</li>
+        <li>Tomate</li>
+        <li>Mamão</li>
+        <li>Laranja</li>
+        <li>Cenoura</li>
+        <li>Cebola</li>
+        <li>Manga</li>
+    </ul>
+    <h2>Listas Aninhadas</h2>
+    <p>É possível aninhar listas e inclusive misturar vários tipos de listas diferentes, sejam ordenadas, não ordenadas ou de definição. Isso é amplamente utilizado na criação de menus. Exemplo de lista aninhada e mista a seguir:</p>
+    <h3>Meus jogos favoritos</h3>
+    <ul>
+        <li>Nintendinho</li>
+        <ol>
+            <li>Mario Bros</li>
+            <ul type="square">
+                <li>Super Mario Bros</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="square">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ol>
+        <li>Super Nintendo</li>
+        <ol>
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+            <ul type="square">
+                <li>Donkey Kong Counrty III</li>
+                <li>Diddy's Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation I</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul type="square">
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul type="square">
+                <li>Simphony of the Night</li>
+            </ul>
+        </ol>
+    </ul>
+    <h2>Lista de Definições</h2>
+    <p>Como diz o nome, ele é uma lista em que seus itens são termos com suas definições, atuando como um dicionário. Auxilia bastante mecanismos de busca quando um usuário digta, por exemplo, a definição de HTML, os mecanismos de busca irão priorizar sites que possuam listas de definição, isso valoriza seu site. É uma lista sem demarcadores, mas muito útil em alguns casos. Exemplo de lista de definição a seguir:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para a criação do conteúdo do site e por dar significado aos seus elementos.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de seletores, utilizada para a estelização e desing da sua página.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação responsável pela interatividade do seu site.</dd>
+    </dl>
+</body>
+</html>
