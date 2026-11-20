@@ -10,9 +10,19 @@
     <p>Utilizamos as tag picture e source para a estruturação de imagens dinâmicas que se adaptam a qualquer tela de qualquer dispositivo. Tente abrir essa página em outro dispositivo, como o celular ou um tablet.</p>
 
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
-        <img src="imagens/foto-g.png" alt="Imagem grande">
+        <source media="(max-width: 750px)" srcset="Midias/imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Midias/imagens/foto-m.png" type="image/png">
+        <img src="Midias/imagens/foto-g.png" alt="Imagem grande">
     </picture>
-</body>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio utilizando HTML5. Quando utilizamos áudios neste formato, o funcionamento é idêntico ao da tag &lt;picture&gt;, pois o navegador primeiro tentará carregar o primeiro arquivo da sequência, qual é de cima para baixo, e caso não consiga irá tentar carregar os outros arquivos até chegar por último no parágrafo onde disponibilizamos o download do arquivo de áudio.</p>
+    <audio preload="metadata" controls loop>
+        <source src="Midias/audios/happy-mistake.mp3" type="audio/mpeg">
+        <source src="Midias/audios/happy-mistake.ogg" type="audio/ogg">
+        <source src="Midias/audios/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="Midias/audios/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <p>Caso queira baixar o arquivo de áudio <a href="Midias/audios/happy-mistake.mp3" download="happy-mistake.mp3" type="auido/mpeg">Clique aqui</a></p>
+</body> 
 </html>
